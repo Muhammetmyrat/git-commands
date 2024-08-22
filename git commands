@@ -1,0 +1,42 @@
+git commands
+
+Using git switch (Recommended for newer Git versions)
+
+Switch to an existing branch:
+git switch branch-name
+
+Switch to a new branch and create it if it doesn't exist:
+git switch -c new-branch-name
+
+Stash the changes:
+git stash
+
+git switch branch-name  # or git checkout branch-name
+
+Apply the stashed changes (when needed):
+git stash apply
+
+Force Delete (regardless of merge status)
+git branch -D branch_name
+
+Delete a Local Branch
+Safe Delete (only if the branch has been merged)
+git branch -d branch_name
+
+Delete the branch:
+
+For local: git branch -D branch_name
+For remote: git push origin --delete branch_name
+
+Fetch the Latest Changes
+First, fetch the latest changes from the remote repository to update your local copy with the new branch information.
+git fetch origin
+
+Verify the Branch
+Ensure you are now on the correct branch and that it is tracking the remote branch.
+git branch -vv
+
+Unstage a File
+If you’ve added a file to the staging area using git add, and you want to unstage it, you can use the following command:
+git restore --staged <file_name>
+
