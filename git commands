@@ -40,3 +40,8 @@ Unstage a File
 If you’ve added a file to the staging area using git add, and you want to unstage it, you can use the following command:
 git restore --staged <file_name>
 
+Rename the branch locally:
+git branch -m new-branch-name
+
+Push the renamed branch to the remote repository:
+git push origin -u new-branch-name
